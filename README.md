@@ -95,6 +95,14 @@ in `Makefile` (and maybe edit the `all` target to not depend on the .exe and .cl
 Note: The Makefile should be replaced by something else that is simpler to read and can produce
 nicer looking output.
 
+Use on Docker
+-------------
+
+```
+docker build -t startup-time ./
+docker run -it startup-time
+```
+
 Results
 =======
 

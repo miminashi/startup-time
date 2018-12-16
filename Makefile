@@ -120,7 +120,7 @@ all: $(COMPILED_LANGS) hello-world.exe HelloWorld.class HelloWorldScala.class ru
 	$(call run_lang,Scala ($(Scala_COMPILER) $(Scala_VERSION)),$(shell which scala) HelloWorldScala)
 
 install:
-	$(ROOT_CMD) apt-get install $(PACKAGES)
+	$(ROOT_CMD) apt-get -y install $(PACKAGES)
 
 C: hello-world.c
 	$(C_COMPILER) $(CFLAGS) -o $@ $^
